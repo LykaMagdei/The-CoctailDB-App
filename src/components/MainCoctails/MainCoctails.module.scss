@@ -1,0 +1,138 @@
+.mainCoctailsContainer {
+  max-width: 1920px;
+  margin: 0 auto;
+  header {
+    position: fixed;
+    top: 0;
+    .logo {
+      margin: 0 0 0 160px;
+      .logo_mini{
+        max-width: 50px;
+        display: none;
+      }
+    }
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #221f1f;
+    height: 75px;
+    z-index: 1000;
+    form {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      .input_container {
+        background-color: #fff;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        height: 45px;
+        border-radius: 3px 0 0 3px;
+        img {
+          width: 25px;
+        }
+        input {
+          margin: 0 0 0 10px;
+          width: 100%;
+          font-size: 15px;
+          border: none;
+          outline: none;
+        }
+      }
+      button {
+        background-color: #fff;
+        border-radius: 0 3px 3px 0;
+        height: 45px;
+        border: none;
+        width: 60px;
+        background-color: #00a046;
+        cursor: pointer;
+        img {
+          width: 25px;
+        }
+      }
+    }
+    .inner_icon {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0 150px 0 0;
+      .icon_block {
+        background-color: #fff;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+        margin: 0 10px;
+        position: relative;
+        .table_number {
+          background-color: #797878;
+          position: absolute;
+          top: -10px;
+          right: -10px;
+          color: #fff;
+          width: 20px;
+          height: 20px;
+          font-size: 12px;
+          border-radius: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .icons {
+          width: 25px;
+        }
+      }
+    }
+  }
+  .main_content {
+    margin: 75px 0 0 0;
+  }
+}
+
+@media (max-width: 1105px) {
+  .mainCoctailsContainer {
+    header {
+      .logo {
+        margin: 0 20px 0 100px;
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .mainCoctailsContainer {
+    header {
+      .inner_icon {
+        margin: 0 10px 0 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .mainCoctailsContainer {
+    header {
+      .logo {
+        margin: 0 10px 0 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .mainCoctailsContainer {
+    header {
+      .logo {
+        .logo_large{
+          display: none;
+        }
+        .logo_mini{
+          display: block;
+        }
+      }
+    }
+  }
+}

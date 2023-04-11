@@ -1,0 +1,51 @@
+.coctailsList {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.coctailsList .coctailItem {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.coctailsList .arrow {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.coctailsList .arrow button {
+  margin: 20px 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.coctailsList .arrow button img {
+  width: 40px;
+}
+
+@media (max-width: 1620px) {
+  .coctailsList .coctailItem {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1210px) {
+  .coctailsList .coctailItem {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 810px) {
+  .coctailsList .coctailItem {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

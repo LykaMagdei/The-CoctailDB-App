@@ -1,0 +1,31 @@
+.error_text {
+  max-width: 1600px;
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.findCoctail {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+@media (max-width: 1620px) {
+  .findCoctail {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1210px) {
+  .findCoctail {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 810px) {
+  .findCoctail {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
